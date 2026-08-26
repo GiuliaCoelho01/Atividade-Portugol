@@ -1,0 +1,22 @@
+programa
+{
+    funcao inicio()
+    {
+        // 3.3. Calcule e exiba a média aritmética dos números inteiros
+        // de 15 a 100 (inclusive).
+
+        inteiro soma = 0
+        inteiro quantidade = 0
+        real media
+
+        para (inteiro i = 15; i <= 100; i++)
+        {
+            soma = soma + i
+            quantidade = quantidade + 1
+        }
+
+        media = soma / quantidade
+
+        escreva("Média: ", media)
+    }
+}
