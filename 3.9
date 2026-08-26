@@ -1,0 +1,33 @@
+programa
+{
+    funcao inicio()
+    {
+        // 3.9. Leia 10 valores e informe quantos estão no intervalo
+        // de 24 a 42 (inclusive) e quantos estão fora.
+
+        inteiro valor
+        inteiro contador = 1
+        inteiro dentro = 0
+        inteiro fora = 0
+
+        enquanto (contador <= 10)
+        {
+            escreva("Digite o ", contador, "º valor: ")
+            leia(valor)
+
+            se (valor >= 24 e valor <= 42)
+            {
+                dentro = dentro + 1
+            }
+            senao
+            {
+                fora = fora + 1
+            }
+
+            contador = contador + 1
+        }
+
+        escreva("\nValores entre 24 e 42: ", dentro)
+        escreva("\nValores fora do intervalo: ", fora)
+    }
+}
