@@ -1,0 +1,25 @@
+programa
+{
+    funcao inicio()
+    {
+        // 3.2. Leia dois valores. Enquanto o segundo valor for menor ou igual
+        // a zero, peça novamente esse mesmo valor.
+        // Ao final, mostre a divisão do primeiro pelo segundo.
+
+        real primeiro, segundo
+
+        escreva("Digite o primeiro número: ")
+        leia(primeiro)
+
+        escreva("Digite o segundo número: ")
+        leia(segundo)
+
+        enquanto (segundo <= 0)
+        {
+            escreva("Digite um valor maior que zero: ")
+            leia(segundo)
+        }
+
+        escreva("Resultado: ", primeiro / segundo)
+    }
+}
