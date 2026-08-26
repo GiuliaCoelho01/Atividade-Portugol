@@ -1,0 +1,28 @@
+programa
+{
+    funcao inicio()
+    {
+        inteiro num
+
+        // 2.2. Leia um valor e diga se ele é positivo, negativo ou zero.
+
+        escreva("Insira um número: ")
+        leia(num)
+
+        se (num > 0)
+        {
+            escreva("Esse número é positivo: ", num)
+        }
+        senao
+        {
+            se (num < 0)
+            {
+                escreva("Esse número é negativo: ", num)
+            }
+            senao
+            {
+                escreva("O número ", num, " é zero.")
+            }
+        }
+    }
+}
