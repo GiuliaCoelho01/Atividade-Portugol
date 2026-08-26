@@ -1,0 +1,41 @@
+programa
+{
+    funcao inicio()
+    {
+        // 3.5. Leia 2 notas de um aluno, calcule a média final e considere
+        // aprovação com nota 9,5. Em seguida, pergunte se deseja calcular
+        // a média de outro aluno.
+
+        real nota1, nota2, media
+        inteiro aprovados = 0
+        cadeia resposta = "S"
+
+        enquanto (resposta == "S")
+        {
+            escreva("Digite a primeira nota: ")
+            leia(nota1)
+
+            escreva("Digite a segunda nota: ")
+            leia(nota2)
+
+            media = (nota1 + nota2) / 2
+
+            escreva("Media final: ", media, "\n")
+
+            se (media >= 9.5)
+            {
+                escreva("Aluno aprovado!\n")
+                aprovados = aprovados + 1
+            }
+            senao
+            {
+                escreva("Aluno reprovado!\n")
+            }
+
+            escreva("Calcular a media de outro aluno? (S/N): ")
+            leia(resposta)
+        }
+
+        escreva("\nQuantidade de alunos aprovados: ", aprovados)
+    }
+}
