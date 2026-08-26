@@ -1,0 +1,43 @@
+programa
+{
+    funcao inicio()
+    {
+        inteiro n1, n2, n3, n4, maior
+
+        // 2.6. Leia 4 valores diferentes e informe apenas
+        // o primeiro, o último e o maior deles.
+
+        escreva("Insira o primeiro número: ")
+        leia(n1)
+
+        escreva("Insira o segundo número: ")
+        leia(n2)
+
+        escreva("Insira o terceiro número: ")
+        leia(n3)
+
+        escreva("Insira o quarto número: ")
+        leia(n4)
+
+        maior = n1
+
+        se (n2 > maior)
+        {
+            maior = n2
+        }
+
+        se (n3 > maior)
+        {
+            maior = n3
+        }
+
+        se (n4 > maior)
+        {
+            maior = n4
+        }
+
+        escreva("O número maior é: ", maior, "\n")
+        escreva("O primeiro número é: ", n1, "\n")
+        escreva("O último número é: ", n4)
+    }
+}
