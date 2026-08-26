@@ -1,0 +1,69 @@
+programa
+{
+    funcao inicio()
+    {
+        real nu1, nu2, nu3, nu4
+        real soma = 0
+        real media
+        inteiro contador = 0
+
+        // 2.8. Leia 4 números, aceitando apenas valores maiores que 0
+        // e menores que 10. Calcule a média.
+
+        escreva("Informe o primeiro número: ")
+        leia(nu1)
+
+        escreva("Informe o segundo número: ")
+        leia(nu2)
+
+        escreva("Informe o terceiro número: ")
+        leia(nu3)
+
+        escreva("Informe o quarto número: ")
+        leia(nu4)
+
+        se (nu1 > 0 e nu1 < 10)
+        {
+            soma = soma + nu1
+            contador = contador + 1
+        }
+
+        se (nu2 > 0 e nu2 < 10)
+        {
+            soma = soma + nu2
+            contador = contador + 1
+        }
+
+        se (nu3 > 0 e nu3 < 10)
+        {
+            soma = soma + nu3
+            contador = contador + 1
+        }
+
+        se (nu4 > 0 e nu4 < 10)
+        {
+            soma = soma + nu4
+            contador = contador + 1
+        }
+
+        se (contador > 0)
+        {
+            media = soma / contador
+
+            escreva("A média final é: ", media, "\n")
+
+            se (media > 5)
+            {
+                escreva("Você passou no teste")
+            }
+            senao
+            {
+                escreva("Tente novamente")
+            }
+        }
+        senao
+        {
+            escreva("Nenhum valor válido foi informado.")
+        }
+    }
+}
